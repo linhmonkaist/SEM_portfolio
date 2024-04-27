@@ -11,7 +11,7 @@ const Work = () => {
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1});
   const [works, setWorks] = useState([]);
   const [filterWorks, setFilterWorks] = useState([]);
-  const itemArray = ['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All']; 
+  const itemArray = ['All', 'Korea', 'US', 'Mobile App', 'React JS', ]; 
 
   useEffect(() => {
     const query = '*[_type == "works"]';
@@ -38,7 +38,8 @@ const Work = () => {
   }
   return (
     <>
-      <h2 className= "head-text"> My creatice <span> portfolio </span> <br/> section </h2>
+      <h2 className= "head-text"><span> Hall of Fame </span> </h2>
+      <p className= "p-text-description">Thành tích của team SEM Scholars</p>
       <div className = 'app__work-filter'>
         {itemArray.map((item, index) => (
           <div 

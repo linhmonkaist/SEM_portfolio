@@ -1,7 +1,8 @@
 import React, { useState, useEffect} from 'react';
 import { motion } from 'framer-motion';
-import {images} from '../../constants'
+import { NavLink, useLocation  } from "react-router-dom";
 
+import {images} from '../../constants'
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
 import { urlFor, client } from '../../client'
@@ -18,22 +19,26 @@ const About = () => {
   }, []); 
   return (
     <>
-      <h2 className= "head-text"> I know that <span>Good design</span> <br/> means <span>Good business</span></h2>
+      <h2 className= "head-text"> <span>Our Services</span> </h2>
+      <p className= "p-text-description"> SEM Scholars cung cấp nhiều gói mentor linh hoạt nhằm hỗ trợ tốt nhất cho các bạn mentee. Dịch vụ của team SEM gồm các gói mentor A-Z không giới hạn số lượng các buổi
+      hỗ trợ và các gói mentor lẻ với thời lượng trong một buổi. </p>
 
       <div className= "app__profiles">
         {abouts.map((about, index) => (
-          <motion.div
-            whileInView={{ opacity: 1}}
-            whileHover={{ scale: 1.1}}
-            transition={{ duration: 0.5, type: 'tween'}}
-            className='app__profiles-item'
-            key= {about.title + index}
-          >
-            <img src={urlFor(about.imgUrl)} alt ={about.title}/>
-            <h2 className="bold-text" style={{marginTop: 20}}>{about.title}</h2>
-            <p className="p-text" style={{marginTop: 10}}>{about.description}</p>
+          <NavLink className="nav-link" to={{ pathname: "/about" }}  state= {{about: about}}>
+            <motion.div
+              whileInView={{ opacity: 1}}
+              whileHover={{ scale: 1.1}}
+              transition={{ duration: 0.5, type: 'tween'}}
+              className='app__profiles-item'
+              key= {about.title + index}
+            >
+              <img src={urlFor(about.imgUrl)} alt ={about.title}/>
+              <h2 className="bold-text" style={{marginTop: 20}}>{about.title}</h2>
+              <p className="p-text" style={{marginTop: 10}}>{about.description}</p>
 
-          </motion.div>
+            </motion.div>
+          </NavLink>
         ))}
       </div>
     </>

@@ -78,7 +78,6 @@ const Skills = () => {
                       <h4 className='bold-text'>{work.name}</h4>
                       <p className='p-text'>{work.company}</p>
                     </motion.div>
-                    {console.log(work.name)}
                     <div>
                       {work.desc}
                     </div>
@@ -103,6 +102,6 @@ const Skills = () => {
 // export default Skills;
 export default AppWrap(
   MotionWrap(Skills, 'app__skills'),
-  'skills',
+  'skill',
   'app__whitebg'
 );
