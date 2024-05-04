@@ -34,7 +34,7 @@ const Team = () => {
                 <motion.div
                   whileHover={{ opacity: [0, 1] }}
                   transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
-                  className= "app__team-hover app__flex"
+                  className= " app__flex"
                 >
                 </motion.div>
             </div>

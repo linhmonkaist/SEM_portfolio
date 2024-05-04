@@ -1,6 +1,7 @@
 #home {
     position: relative;
-    background: url("../../assets/bgIMG.png");
+    // background: url("../../assets/bgIMG.png");
+    background: url("../../assets/Frame5bg.svg");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -42,6 +43,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    float: right;
     height: 100%;
   
     margin: 0 2rem;
