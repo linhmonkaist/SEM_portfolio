@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { About, Footer, Header, Skills, Testimonial, Work, Team , Member} from './container'
+import { Services, Footer, Header, Skills, Testimonial, Mentees, Team , Member} from './container'
 import { Navbar, ScrollToTop} from './components'
 import { Home, ServicePage} from './pages'
 import './App.scss'
@@ -15,7 +15,7 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Home/>} />
                     <Route path="/member" element={<Member />} />
-                    <Route path="/about" element={<ServicePage />} />
+                    <Route path="/service" element={<ServicePage />} />
                 </Routes>
                 <Footer/>
             </BrowserRouter>

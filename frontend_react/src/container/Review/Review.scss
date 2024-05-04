@@ -1,27 +1,46 @@
-.app__testimonial {
+.app__review {
     flex: 1;
     width: 100%;
     flex-direction: column;
   }
-  
-  .app__testimonial-item {
-    width: 60%;
+.app__review-portfolio{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+  .app__review-item {
+    width: 30%;
     min-height: 320px;
     background-color: var(--white-color);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 2rem;
+    margin: 0.75rem;
     border-radius: 15px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   
     transition: all 0.3s ease-in-out;
-  
-    img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
+    .app__reivew-item-top{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      img {
+        width: 30%;
+        height: 30%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .app__review-item-header{
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        padding-left: 2rem;
+      }
     }
+
   
     @media screen and (min-width: 2000px) {
       min-height: 450px;
@@ -40,8 +59,8 @@
       flex-direction: column;
     }
   }
-  
-  .app__testimonial-content {
+
+  .app__review-content {
     flex: 1;
     height: 100%;
     padding: 0 2rem;
@@ -53,8 +72,8 @@
     align-items: flex-start;
   
     p {
-      font-size: 1.25rem;
-      line-height: 2rem;
+      font-size: 1rem;
+      line-height: 1rem;
       color: var(--black-color);
       font-family: var(--font-base);
   
@@ -82,7 +101,7 @@
     }
   }
   
-  .app__testimonial-btns {
+  .app__review-btns {
     flex-direction: row;
     margin-top: 1rem;
   
@@ -121,40 +140,3 @@
     }
   }
   
-  .app__testimonial-brands {
-    width: 80%;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-  
-    div {
-      width: 150px;
-      margin: 1.5rem;
-  
-      img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        filter: grayscale(1);
-      }
-  
-      &:hover {
-        img {
-          filter: grayscale(0);
-        }
-      }
-  
-      @media screen and (min-width: 2000px) {
-        width: 210px;
-        margin: 2rem;
-      }
-  
-      @media screen and (max-width: 450px) {
-        width: 120px;
-        margin: 1rem;
-      }
-    }
-  
-    @media screen and (max-width: 800px) {
-      width: 100%;
-    }
-  }

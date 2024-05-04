@@ -1,6 +1,6 @@
 export default {
-    name: 'testimonials',
-    title: 'Testimonials',
+    name: 'review',
+    title: 'Review',
     type: 'document',
     fields: [
         {
@@ -9,8 +9,8 @@ export default {
             type: 'string'
         },
         {
-            name: 'company',
-            title: 'Company',
+            name: 'packet',
+            title: 'Mentor Packet',
             type: 'string'
         },
         {
@@ -18,7 +18,7 @@ export default {
             title: 'ImgURL',
             type: 'image',
             options: {
-                hotsp: true, //
+                hotsp: true, 
             }
         },
         {

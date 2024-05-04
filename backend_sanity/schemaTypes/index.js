@@ -1,6 +1,6 @@
 import { createSchema } from "sanity"
-import testimonials from "./testimonials"
-import abouts from "./abouts"
+import review from "./review"
+import services from "./services"
 import brands from "./brands"
 import experiences from './experiences'
 import skills from './skills'
@@ -11,4 +11,4 @@ import team from './team'
 import mentees from "./mentees"
 
 
-export const schemaTypes = [testimonials, abouts, brands, experiences, skills, workExperience, contact, works, team, mentees]; 
+export const schemaTypes = [review, services, brands, experiences, skills, workExperience, contact, works, team, mentees]; 

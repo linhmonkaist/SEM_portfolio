@@ -4,38 +4,40 @@ import { NavLink, useLocation  } from "react-router-dom";
 
 import {images} from '../../constants'
 import { AppWrap, MotionWrap } from '../../wrapper';
-import './About.scss';
+import './Services.scss';
 import { urlFor, client } from '../../client'
 
-const About = () => {
-  const [abouts, setAbouts] = useState([]);
+const Services = () => {
+  const [services, setServices] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "abouts"]';
+    const query = '*[_type == "services"]';
 
     client.fetch(query).then((data) => {
-        setAbouts(data); 
+      setServices(data); 
       })
   }, []); 
+  
   return (
     <>
-      <h2 className= "head-text"> <span>Our Services</span> </h2>
+      <h2 className= "head-text"> <span>Our Service</span> </h2>
       <p className= "p-text-description"> SEM Scholars cung cấp nhiều gói mentor linh hoạt nhằm hỗ trợ tốt nhất cho các bạn mentee. Dịch vụ của team SEM gồm các gói mentor A-Z không giới hạn số lượng các buổi
       hỗ trợ và các gói mentor lẻ với thời lượng trong một buổi. </p>
 
       <div className= "app__profiles">
-        {abouts.map((about, index) => (
-          <NavLink className="nav-link" to={{ pathname: "/about" }}  state= {{about: about}}>
+        {services.map((service, index) => (
+          <NavLink className="nav-link" to={{ pathname: "/service" }}  state= {{service: service}}>
             <motion.div
               whileInView={{ opacity: 1}}
               whileHover={{ scale: 1.1}}
               transition={{ duration: 0.5, type: 'tween'}}
               className='app__profiles-item'
-              key= {about.title + index}
+              key= {service.title + index}
             >
-              <img src={urlFor(about.imgUrl)} alt ={about.title}/>
-              <h2 className="bold-text" style={{marginTop: 20}}>{about.title}</h2>
-              <p className="p-text" style={{marginTop: 10}}>{about.description}</p>
+              <img src={urlFor(service.imgUrl)} alt ={service.serviceName}/>
+              <h2 className="bold-text" style={{marginTop: 20}}>{service.serviceName}</h2>
+              <p className="p-text" style={{marginTop: 10}}>{service.des}</p>
+              <p className="p-text">Chi tiết</p>
 
             </motion.div>
           </NavLink>
@@ -46,7 +48,7 @@ const About = () => {
 }
 
 export default AppWrap(
-  MotionWrap(About, 'app__about'),
-  'about',
+  MotionWrap(Services, 'app__about'),
+  'service',
   'app__whitebg'
 );

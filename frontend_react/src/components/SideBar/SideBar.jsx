@@ -1,14 +1,14 @@
 import React, { useState, useEffect} from 'react';
 import './SideBar.scss';
 
-const Sidebar = () => {
+import { urlFor, client } from '../../client'
 
-  let menuItems = [ "Eduhance", "Home" , "Explore"]
-   
+const Sidebar = () => {
   const [hovered, setHovered] = useState(null);
   const [active, setActive] = useState(0);
   const [animate, setAnimate] = useState(false);
   const [expanded, setExpanded] = useState(true);
+  const [services, setServices] = useState([]); 
   let delay = 1;
   useEffect(() => {
     setAnimate(true);
@@ -19,30 +19,22 @@ const Sidebar = () => {
     };
   }, [active, delay]);
 
+  useEffect(() => {
+    const query = '*[_type == "services"]';
+
+    client.fetch(query).then((data) => {
+      setServices(data); 
+      })
+  }, []); 
   return (
     <div className={`sidebar ${expanded && "expanded"} app__flex`}>
-      {menuItems.map((item, index) => {
+      {services.map((item, index) => {
         let middle = true;
         return (
-          <div
-            className={`boxicon-container ${
-              expanded && "expanded-boxicon-container"
-            }`}
-            onMouseEnter={() => {
-              if (middle) {
-                setHovered(index);
-              }
-            }}
-            onMouseLeave={() => {
-              if (middle) {
-                setHovered(null);
-              }
-            }}
-            onClick={() => {
-              if (middle) {
-                setActive(index);
-              }
-            }}
+          <div className={`boxicon-container ${expanded && "expanded-boxicon-container"}`}
+            onMouseEnter={() => {setHovered(index);}}
+            onMouseLeave={() => {setHovered(null);}}
+            onClick={() => {setActive(index);}}
             key={index}
           >
             <box-icon 
@@ -50,18 +42,14 @@ const Sidebar = () => {
                       ${!middle && "first-and-last-trash-fix"}
                       ${active === index && "active"}
                       `}
-              color={
-                hovered === index || active === index ? "white" : item.color
-              }
-              animation={active === index && animate ? "tada" : ""}
-              rotate={item.rotate}
+              color={hovered === index || active === index ? "white" : "black"}
             ></box-icon>
             <p
               className={`description 
             ${"show-description"}
             ${active === index && "active-description"}`}
             >
-              {item}
+              {item.serviceName}
             </p>
           </div>
         );
