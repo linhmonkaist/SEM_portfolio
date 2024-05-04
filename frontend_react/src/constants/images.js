@@ -34,7 +34,9 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
-
+import facebook from '../assets/facebook.png';
+import instagram from '../assets/instagram.png';
+import tiktok from '../assets/tiktok.png';
 export default {
   email,
   mobile,
@@ -69,4 +71,7 @@ export default {
   nb,
   skype,
   spotify,
+  facebook,
+  instagram,
+  tiktok
 };

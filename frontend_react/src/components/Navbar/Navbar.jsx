@@ -17,7 +17,7 @@ const Navbar = () => {
             </a>
             <ul className="app__navbar-links">
                 {navArray.map((item) => (
-                    <li className="app__flex p-text" key={`link-${item}`}>
+                    <li className="app__flex p-text bold-text" key={`link-${item}`}>
                         <div />
                         <a href={`/#${item}`}>{item}</a>
                     </li>
