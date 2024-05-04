@@ -3,8 +3,8 @@ import { NavigationDots } from '../components'
 
 export const FooterWrap = (Component, idName, classNames) => function HOC () {
   return (
-    <div id = {idName} >
-        <div className='app__footer-wrapper'>
+    <div id = {idName} className={`app__container ${classNames}`}>
+        <div className='app__wrapper app__flex'>
             <Component/>
             
             {/* <div className='copyright'>

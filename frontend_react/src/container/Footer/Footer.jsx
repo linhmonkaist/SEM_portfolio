@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { images } from '../../constants';
-import { FooterWrap, MotionWrap } from '../../wrapper';
+import { AppWrap, FooterWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
 import './Footer.scss';
 
@@ -39,7 +39,6 @@ const Footer = () => {
     <>
       
       <div classname= "app__footer app__flex">
-        <hr/>
         <div className='app__footer-container'>
           <div className='app__footer-description'>
             <h4 className="bold-text">SEM Scholars</h4>
@@ -60,7 +59,7 @@ const Footer = () => {
           </div>
         </div>
         <hr/>
-        <div className='app__footer-rights'>
+        <div className='app__footer-rights app__flex'>
           <p className= 'p-text'>@2024 SEM Scholars</p>
           <p className= 'p-text'>All right reserved</p>
         </div>
