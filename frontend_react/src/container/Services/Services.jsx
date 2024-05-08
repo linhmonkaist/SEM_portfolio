@@ -21,7 +21,7 @@ const Services = () => {
   return (
     <>
       <h2 className= "head-text"> <span>Our Service</span> </h2>
-      <p className= "p-text-description"> SEM Scholars cung cấp nhiều gói mentor linh hoạt nhằm hỗ trợ tốt nhất cho các bạn mentee. Dịch vụ của team SEM gồm các gói mentor A-Z không giới hạn số lượng các buổi
+      <p className= "p-text-description"> SEM Scholars cung cấp nhiều gói mentor linh hoạt nhằm hỗ trợ tốt nhất cho các bạn mentee. <br/>Dịch vụ của team SEM gồm các gói mentor A-Z không giới hạn số lượng các buổi
       hỗ trợ và các gói mentor lẻ với thời lượng trong một buổi. </p>
 
       <div className= "app__profiles">
@@ -48,7 +48,7 @@ const Services = () => {
 }
 
 export default AppWrap(
-  MotionWrap(Services, 'app__about'),
+  MotionWrap(Services, 'app__service'),
   'service',
-  'app__whitebg'
+  'app__primarybg'
 );

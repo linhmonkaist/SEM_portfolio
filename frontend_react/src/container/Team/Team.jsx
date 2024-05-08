@@ -56,5 +56,5 @@ const Team = () => {
 export default AppWrap(
   MotionWrap(Team, 'app__team'),
   'team',
-  'app__primarybg'
+  'app__graybg'
 );

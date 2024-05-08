@@ -54,5 +54,5 @@ const Member = () => {
 export default AppWrap(
   MotionWrap(Member, 'app__member'),
   'member',
-  'app__primarybg'
+  'app__graybg'
 );

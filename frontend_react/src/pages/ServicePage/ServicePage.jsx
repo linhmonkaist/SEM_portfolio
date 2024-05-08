@@ -4,7 +4,6 @@ import { NavLink, useLocation, Link } from "react-router-dom";
 
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
-import { SideBar } from '../../components';
 import './ServicePage.scss';
 
 const ServicePage = () => {
@@ -119,5 +118,5 @@ const ServicePage = () => {
 export default AppWrap(
   MotionWrap(ServicePage, 'app__work'),
   'servicepage',
-  'app__primarybg'
+  'app__graybg'
 );

@@ -10,7 +10,10 @@
   .app__primarybg {
     background-color: var(--primary-color);
   }
-  
+  .app__graybg{
+    background-color: var(--third-color);
+  }
+
   .app__container {
     width: 100%;
     min-height: 100vh;
@@ -29,10 +32,10 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
-    padding: 4rem 2rem;
+    padding: 4rem 4rem;
   
     @media screen and (max-width: 450px) {
-      padding: 4rem 1rem 2rem;
+      padding: 4rem 2rem 2rem;
     }
   }
   .app__footer-wrapper {
@@ -75,6 +78,7 @@
   
     @media screen and (min-width: 2000px) {
       font-size: 4rem;
+      margin-top: 4rem;
     }
   
     @media screen and (max-width: 450px) {
@@ -83,32 +87,32 @@
   }
   
   .p-text {
-    font-size: 15px;
+    font-size: 17px;
     text-align: left;
     color: var(--gray-color);
     line-height: 1.5;
   
     @media screen and (min-width: 2000px) {
-      font-size: 15px;
+      font-size: 20px;
     }
     @media screen and (max-width: 430px) {
-      font-size: 12px;
+      font-size: 15px;
     }
   }
 
   .p-text-description{
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
     color: var(--gray-color);
     line-height: 1.5;
   
     @media screen and (min-width: 2000px) {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
     }
   }
   
   .bold-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 800;
     color: var(--black-color);
     text-align: left;
@@ -118,7 +122,7 @@
     }
   
     @media screen and (max-width: 450px) {
-      font-size: 0.9rem;
+      font-size: 17px;
     }
   }
   

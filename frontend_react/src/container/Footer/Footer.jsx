@@ -50,12 +50,12 @@ const Footer = () => {
             <img src={images.facebook} alt="facebook"></img>
           </div>
           <div className='app__footer-sns'>
-            <h5 className="bold-text">Instagram</h5>
-            <a href=""><img src={images.instagram} alt='instagram'></img></a>
-          </div>
-          <div className='app__footer-sns'>
             <h5 className="bold-text">Tiktok</h5>
             <a href=""><img src={images.tiktok} alt='tiktok'></img></a>
+          </div>
+          <div className='app__footer-sns'>
+            <h5 className="bold-text">Instagram</h5>
+            <a href=""><img src={images.instagram} alt='instagram'></img></a>
           </div>
         </div>
         <hr/>
@@ -72,5 +72,5 @@ const Footer = () => {
 export default FooterWrap(
   MotionWrap(Footer, 'app__footer'),
   'contact',
-  'app__whitebg',
+  'app__primarybg',
 );

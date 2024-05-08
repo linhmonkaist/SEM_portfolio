@@ -87,5 +87,5 @@ const Mentees = () => {
 export default AppWrap(
   MotionWrap(Mentees, 'app__mentees'),
   'mentees',
-  'app__whitebg'
+  'app__primarybg'
 );

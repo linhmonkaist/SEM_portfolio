@@ -3,9 +3,10 @@
 :root {
   --font-base: "Verdana", sans-serif;
 
-  --primary-color: #efe8ff;
+  --primary-color: #fff9df;
   /* --secondary-color: #313bac; */
   --secondary-color: #9b121f;
+  --third-color: #f6f6f6;
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;

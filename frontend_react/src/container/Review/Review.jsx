@@ -70,5 +70,5 @@ const Review = () => {
 export default AppWrap(
   MotionWrap(Review, 'app__review'),
   'review',
-  'app__primarybg',
+  'app__graybg',
 );
