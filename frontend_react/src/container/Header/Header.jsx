@@ -1,8 +1,12 @@
 import React from 'react'
+import { useState, useEffect } from 'react';
+import { urlFor, client } from '../../client';
+
 import './Header.scss';
 import { motion } from 'framer-motion'
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants'
+// import { Mentees} from '../Mentees/Mentees'
 
 const scaleVariants = {
   whileInView: {
@@ -16,8 +20,17 @@ const scaleVariants = {
 }
 
 const Header = () => {
+  const [filterWorks, setFilterWorks] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "mentees"]';
+
+    client.fetch(query).then((data) => {
+      setFilterWorks(data);
+    });
+  }, []);
   return (
-    <div className='app__header app__flex'>
+    <div className='app__header'>
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -25,10 +38,16 @@ const Header = () => {
       >
         <div className="app__header-badge">
           <div className="badge-cmp app__flex">
-            <span>👋</span>
+            <span>{filterWorks.length}+ </span>
             <div style={{ marginLeft: 20 }}></div>
-            <p className="p-text">Hello, I am Mon </p>
-            <h1 className="head-text">Mon</h1>
+            <p className="p-text">Successful Mentees</p>
+            <h1 className="head-text"></h1>
+          </div>
+          <div className="badge-cmp app__flex">
+            <span>16+ </span>
+            <div style={{ marginLeft: 20 }}></div>
+            <p className="p-text">Quốc gia</p>
+            <h1 className="head-text"></h1>
           </div>
           <div className="tag-cmp app__flex">
             <p className="p-text">Web developer </p>
@@ -51,7 +70,7 @@ const Header = () => {
           className= "overlay_circle"
         />
       </motion.div> */}
-      <motion.div 
+      {/* <motion.div 
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
         className='app__header-circles'
@@ -61,7 +80,7 @@ const Header = () => {
             <img src={circle} alt= "circle" />
           </div>
         ))}
-      </motion.div>
+      </motion.div> */}
     </div>
   )
 }

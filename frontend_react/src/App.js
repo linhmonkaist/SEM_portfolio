@@ -17,7 +17,7 @@ const App = () => {
                     <Route path="/member" element={<Member />} />
                     <Route path="/service" element={<ServicePage />} />
                 </Routes>
-                <Footer/>
+                {/* <Footer/> */}
             </BrowserRouter>
         </div>
     )

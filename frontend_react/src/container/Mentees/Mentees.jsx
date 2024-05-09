@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap} from '../../wrapper';
 import { urlFor, client } from '../../client';
+import { default as Header } from '../Header/Header'
 import './Mentees.scss';
 
 const Mentees = () => {
