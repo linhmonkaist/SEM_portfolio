@@ -37,25 +37,28 @@ const Footer = () => {
 
   return (
     <>
-      
       <div classname= "app__footer app__flex">
         <div className='app__footer-container'>
           <div className='app__footer-description'>
-            <h4 className="bold-text">SEM Scholars</h4>
-            <p>Tổ chức cung cấp các dịch vụ hỗ trợ trong quá trình đi du học</p>
+            <h2 className= "bold-text"> <span>Contact Us</span> </h2>
+            <h4 className="bold-text" style={{fontSize: '2.2rem'}}><span>SEM Scholars</span></h4>
+            <p className='p-text' style={{color: 'black'}}>SEM chính là viết tắt của Scholarship Exploring with Mentors.<br/>
+             SEM Scholars được thành lập với sứ mệnh hỗ trợ các bạn trẻ Việt Nam trong việc apply học bổng đi 
+             du học cũng như cung cấp các khóa học để trang bị những kỹ năng, năng lực ngoại ngữ cần thiết để 
+             các bạn trẻ tự tin vươn mình ra biển lớn.</p>
             <p><span>Email: </span>semscholars.team@gmail.com</p>
           </div>
           <div className='app__footer-sns'>
             <h5 className="bold-text">Facebook</h5>
-            <img src={images.facebook} alt="facebook"></img>
+            <a href="https://www.facebook.com/SEMScholarsTeam" target='_blank'><img src={images.facebook} alt="facebook"></img></a>
           </div>
           <div className='app__footer-sns'>
             <h5 className="bold-text">Tiktok</h5>
-            <a href=""><img src={images.tiktok} alt='tiktok'></img></a>
+            <a href="https://www.tiktok.com/@sem_scholars" target='_blank'><img src={images.tiktok} alt='tiktok'></img></a>
           </div>
           <div className='app__footer-sns'>
             <h5 className="bold-text">Instagram</h5>
-            <a href=""><img src={images.instagram} alt='instagram'></img></a>
+            <a href="https://www.instagram.com/sem_scholars/" target='_blank'><img src={images.instagram} alt='instagram'></img></a>
           </div>
         </div>
         <hr/>

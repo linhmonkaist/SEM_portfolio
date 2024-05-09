@@ -11,14 +11,15 @@ const Mentees = () => {
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1});
   const [works, setWorks] = useState([]);
   const [filterWorks, setFilterWorks] = useState([]);
-  const itemArray = ['All', 'Korea', 'US', 'Mobile App', 'React JS', ]; 
+  const itemArray = ['All', 'US', 'Korea', 'Switzerland', 'HongKong', ]; 
 
   useEffect(() => {
-    const query = '*[_type == "works"]';
+    const query = '*[_type == "mentees"]';
 
     client.fetch(query).then((data) => {
       setWorks(data);
-      setFilterWorks(data);
+      const sorteddata = data.sort((a,b) => a.rankUni - b.rankUni);
+      setFilterWorks(sorteddata);
     });
   }, []);
   
@@ -32,7 +33,7 @@ const Mentees = () => {
       if(item === 'All'){
         setFilterWorks(works);
       } else {
-        setFilterWorks(works.filter((work) => work.tags.includes(item)));
+        setFilterWorks(works.filter((work) => work.countryTags.includes(item)));
       }
     }, 500);
   }
@@ -70,11 +71,11 @@ const Mentees = () => {
             </div>
 
             <div className= 'app__mentees-content app__flex'>
-              <h4 className="bold-text">{work.title}</h4>
-              <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>
+              <h4 className="bold-text">{work.name}</h4>
+              <p className="p-text" style={{ marginTop: 10 }}>{work.scholarship}</p>
 
               <div className="app__mentees-tag app__flex">
-                <p className="p-text">{work.tags[0]}</p>
+                <p className="p-text">{work.countryTags[0]}</p>
               </div>
             </div>
           </div>

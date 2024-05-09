@@ -14,7 +14,12 @@ const Services = () => {
     const query = '*[_type == "services"]';
 
     client.fetch(query).then((data) => {
-      setServices(data); 
+      const sortedServices = data.sort((a, b) => {
+        if (a.serviceID > b.serviceID) return 1;
+        if (a.serviceID < b.serviceID) return -1; 
+        return 0; 
+      });
+      setServices(sortedServices); 
       })
   }, []); 
   
@@ -25,6 +30,7 @@ const Services = () => {
       hỗ trợ và các gói mentor lẻ với thời lượng trong một buổi. </p>
 
       <div className= "app__profiles">
+        {/* {console.log(services)} */}
         {services.map((service, index) => (
           <NavLink className="nav-link" to={{ pathname: "/service" }}  state= {{service: service}}>
             <motion.div
@@ -36,8 +42,8 @@ const Services = () => {
             >
               <img src={urlFor(service.imgUrl)} alt ={service.serviceName}/>
               <h2 className="bold-text" style={{marginTop: 20}}>{service.serviceName}</h2>
-              <p className="p-text" style={{marginTop: 10}}>{service.des}</p>
-              <p className="p-text">Chi tiết</p>
+              <p className="p-text" style={{marginTop: 10, color:'black'}}>{service.des}</p>
+              <p className="p-text" style={{color: '#9b121f'}}>Chi tiết</p>
 
             </motion.div>
           </NavLink>

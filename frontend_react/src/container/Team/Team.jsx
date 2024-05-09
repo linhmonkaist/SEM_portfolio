@@ -14,7 +14,10 @@ const Team = () => {
     const query = '*[_type == "team"]';
 
     client.fetch(query).then((data) => {
-      setTeam(data);
+      const sortedMentor = data.sort((a,b) => {
+        return parseInt(a.id) - parseInt(b.id);
+      })
+      setTeam(sortedMentor);
     });
   }, []);
   
@@ -43,7 +46,8 @@ const Team = () => {
                 
                   <h4 className="bold-text">{member.name}</h4>
                 
-              <p className="p-text">{member.title}</p>
+              <p className="p-text" style={{color: 'black'}}>{member.title}</p>
+              <p className="p-text" style={{color: '#9b121f'}}>More</p>
             </div>
           </div>
           </NavLink>
@@ -56,5 +60,5 @@ const Team = () => {
 export default AppWrap(
   MotionWrap(Team, 'app__team'),
   'team',
-  'app__graybg'
+  'app__whitebg'
 );

@@ -27,9 +27,9 @@ const Review = () => {
     if (review[i+2]) row.push(review[i+2]);  
     groupedReview.push(row); 
   }
-  console.log(groupedReview);
   return (
     <>
+      <h2 className= "head-text"> <span>Review</span> </h2>
       {groupedReview.length && (
         <>
           <div className="app__review-portfolio">

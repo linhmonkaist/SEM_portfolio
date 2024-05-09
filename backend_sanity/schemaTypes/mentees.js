@@ -1,3 +1,8 @@
+/* 
+rankUni: global rank
+type: type of scholarship: full-ride, 100% for 4 years/ 2 years/1 year/ 1 semester, 
+partial scholarship, admission
+*/
 export default {
     name: 'mentees',
     title: 'Mentees',
@@ -9,14 +14,24 @@ export default {
             type: 'string'
         },
         {
-            name: 'description',
-            title: 'Description',
+            name: 'rankUni',
+            title: 'Rank of the Univeristy',
+            type: 'number'
+        },
+        {
+            name: 'type',
+            title: 'Type of Scholarship',
+            type: 'number'
+        },
+        {
+            name: 'scholarship',
+            title: 'Scholarship',
             type: 'string'
         },
         {
-            name: 'rank',
-            title: 'Rank',
-            type: 'number'
+            name: 'university',
+            title: 'University',
+            type: 'string'
         },
         {
             name: 'imgUrl',

@@ -63,7 +63,7 @@
   .app__review-content {
     flex: 1;
     height: 100%;
-    padding: 0 2rem;
+    padding: 1rem 1rem;
     text-align: left;
   
     display: flex;
@@ -72,10 +72,10 @@
     align-items: flex-start;
   
     p {
-      font-size: 1rem;
-      line-height: 1rem;
+      // font-size: 1rem;
+      // line-height: 1rem;
       color: var(--black-color);
-      font-family: var(--font-base);
+      // font-family: var(--font-base);
   
       @media screen and (min-width: 2000px) {
         font-size: 2rem;

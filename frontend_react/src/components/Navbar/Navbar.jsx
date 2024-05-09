@@ -7,7 +7,7 @@ import './Navbar.scss';
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
-    const navArray = ['home', 'service', 'team', 'mentees', 'review', 'contact'];
+    const navArray = ['home', 'service', 'team','review', 'mentees', 'contact'];
     return (
         <nav className="app__navbar">
             <a href='/'>
