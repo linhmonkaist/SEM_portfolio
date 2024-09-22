@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/SEM_portfolio/static/css/main.ce490ab4.css",
+    "main.css": "/SEM_portfolio/static/css/main.5b79d911.css",
     "main.js": "/SEM_portfolio/static/js/main.0053f1ed.js",
     "static/js/796.f2254573.chunk.js": "/SEM_portfolio/static/js/796.f2254573.chunk.js",
     "static/js/165.d1972f9a.chunk.js": "/SEM_portfolio/static/js/165.d1972f9a.chunk.js",
@@ -34,13 +34,13 @@
     "static/media/skype.png": "/SEM_portfolio/static/media/skype.c8d7ee175da5b4c8a8ab.png",
     "index.html": "/SEM_portfolio/index.html",
     "static/media/circle.svg": "/SEM_portfolio/static/media/circle.ae5f84b3853b9e34aa83cf8dada715c5.svg",
-    "main.ce490ab4.css.map": "/SEM_portfolio/static/css/main.ce490ab4.css.map",
+    "main.5b79d911.css.map": "/SEM_portfolio/static/css/main.5b79d911.css.map",
     "main.0053f1ed.js.map": "/SEM_portfolio/static/js/main.0053f1ed.js.map",
     "796.f2254573.chunk.js.map": "/SEM_portfolio/static/js/796.f2254573.chunk.js.map",
     "165.d1972f9a.chunk.js.map": "/SEM_portfolio/static/js/165.d1972f9a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce490ab4.css",
+    "static/css/main.5b79d911.css",
     "static/js/main.0053f1ed.js"
   ]
 }
