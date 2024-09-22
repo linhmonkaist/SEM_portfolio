@@ -2,7 +2,7 @@
   "name": "sem-portfolio-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://linhmonkaist.github.io/SEM_portfolio/",
+  "homepage": "https://linhmonkaist.github.io/SEM_portfolio",
   "dependencies": {
     "@sanity/client": "^6.21.3",
     "@sanity/image-url": "^1.0.2",
