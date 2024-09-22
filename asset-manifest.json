@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SEM_portfolio/static/css/main.ce490ab4.css",
-    "main.js": "/SEM_portfolio/static/js/main.af62ddeb.js",
+    "main.css": "/SEM_portfolio/static/css/main.5b79d911.css",
+    "main.js": "/SEM_portfolio/static/js/main.3cd5e864.js",
     "static/js/796.95e37ef5.chunk.js": "/SEM_portfolio/static/js/796.95e37ef5.chunk.js",
     "static/js/165.f07061cb.chunk.js": "/SEM_portfolio/static/js/165.f07061cb.chunk.js",
     "static/media/about04.png": "/SEM_portfolio/static/media/about04.fa7b3a72ed32b0e25bfb.png",
@@ -33,14 +33,14 @@
     "static/media/git.png": "/SEM_portfolio/static/media/git.a54d3fa44e02f2f61e69.png",
     "static/media/skype.png": "/SEM_portfolio/static/media/skype.c8d7ee175da5b4c8a8ab.png",
     "index.html": "/SEM_portfolio/index.html",
-    "static/media/circle.svg": "/SEM_portfolio/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
-    "main.ce490ab4.css.map": "/SEM_portfolio/static/css/main.ce490ab4.css.map",
-    "main.af62ddeb.js.map": "/SEM_portfolio/static/js/main.af62ddeb.js.map",
+    "static/media/circle.svg": "/SEM_portfolio/static/media/circle.ae5f84b3853b9e34aa83cf8dada715c5.svg",
+    "main.5b79d911.css.map": "/SEM_portfolio/static/css/main.5b79d911.css.map",
+    "main.3cd5e864.js.map": "/SEM_portfolio/static/js/main.3cd5e864.js.map",
     "796.95e37ef5.chunk.js.map": "/SEM_portfolio/static/js/796.95e37ef5.chunk.js.map",
     "165.f07061cb.chunk.js.map": "/SEM_portfolio/static/js/165.f07061cb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce490ab4.css",
-    "static/js/main.af62ddeb.js"
+    "static/css/main.5b79d911.css",
+    "static/js/main.3cd5e864.js"
   ]
 }
