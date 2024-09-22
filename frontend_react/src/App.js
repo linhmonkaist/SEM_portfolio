@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { Services, Footer, Header, Skills, Testimonial, Mentees, Team , Member} from './container'
+import { Member} from './container'
 import { Navbar, ScrollToTop} from './components'
 import { Home, ServicePage} from './pages'
 import './App.scss'
