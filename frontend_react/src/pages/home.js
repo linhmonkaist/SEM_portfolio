@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Services, Header, Skills, Review, Mentees, Team } from '../container'
+import { Services, Header, Skills, Review, Mentees, Team, Contact } from '../container'
 import { Navbar } from '../components'
 
 const Home = () => {
@@ -11,6 +11,7 @@ const Home = () => {
             <Team/>
             <Review/>
             <Mentees/>
+            <Contact />
         </div>
     )
 }

@@ -6,7 +6,8 @@ import './Header.scss';
 import { motion } from 'framer-motion'
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants'
-// import { Mentees} from '../Mentees/Mentees'
+import myimage from '../../assets/about01.png'
+// import { Mentees} from '../Mentees/Mentees'  
 
 const scaleVariants = {
   whileInView: {
@@ -31,56 +32,39 @@ const Header = () => {
   }, []);
   return (
     <div className='app__header'>
-      <motion.div
-        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5 }}
-        className="app__header-infor"
-      >
-        <div className="app__header-badge">
-          <div className="badge-cmp app__flex">
-            <span>{filterWorks.length}+ </span>
-            <div style={{ marginLeft: 20 }}></div>
-            <p className="p-text">Successful Mentees</p>
-            <h1 className="head-text"></h1>
+      <div class="container-fluid header p-0 mb-5">
+        <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
+          <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
+            {/* <h1 class="display-4 text-black mb-5">Đội ngũ hướng dẫn học bổng hàng đầu</h1> */}
+            <div style={{ fontFamily: "'Francois One', sans-serif" }}>
+      <h1 class= "display-4 mb-5">Đội ngũ hướng dẫn học bổng hàng đầu</h1>
+    </div>
+            <div class="row g-4">
+              <div class="col-sm-4">
+                <div class="border-start border-light ps-4">
+                  <h2 class="text-black mb-1" data-toggle="counter-up">46+</h2>
+                  <p class="text-light mb-0">Suất học bổng được chinh phục</p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="border-start border-light ps-4">
+                  <h2 class="text-black mb-1" data-toggle="counter-up">43+</h2>
+                  <p class="text-light mb-0">Trường đại học đã chinh phục</p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="border-start border-light ps-4">
+                  <h2 class="text-black mb-1" data-toggle="counter-up">10</h2>
+                  <p class="text-light mb-0">Mentor hỗ trợ</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="badge-cmp app__flex">
-            <span>16+ </span>
-            <div style={{ marginLeft: 20 }}></div>
-            <p className="p-text">Quốc gia</p>
-            <h1 className="head-text"></h1>
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            <img class="img-header" src={myimage} alt="" />
           </div>
-          <div className="tag-cmp app__flex">
-            <p className="p-text">Web developer </p>
-            <p className="p-text">Free lancer </p>
-          </div>
-        </div>
-
-      </motion.div>
-      {/* <motion.div
-        whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5, delayChildren: 0.5}}
-        className="app__header-img"
-      >
-        <img src= {images.profile} alt="profile_bg"/>
-        <motion.img 
-          whileInView={{ scale: [0, 1] }}
-          transition={{ duration: 0.5, ease: 'easeInOut' }}
-          src= {images.circle}
-          alt= "profile_circle"
-          className= "overlay_circle"
-        />
-      </motion.div> */}
-      {/* <motion.div 
-        variants={scaleVariants}
-        whileInView={scaleVariants.whileInView}
-        className='app__header-circles'
-      >
-        {[images.flutter, images.redux, images.sass].map((circle, index) => (
-          <div className= "circle-cmp app__flex" key={`circle-${index}`}>
-            <img src={circle} alt= "circle" />
-          </div>
-        ))}
-      </motion.div> */}
+        </div>  
+      </div>
     </div>
   )
 }
