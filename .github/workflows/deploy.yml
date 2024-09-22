@@ -1,0 +1,44 @@
+# .github/workflows/deploy.yml
+name: Deploy React App
+
+# Triggers the workflow on push to the `main` branch or pull requests to `main`
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# Job definitions
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout the repository
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Step 2: Set up Node.js environment
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'  # Specify the Node.js version you're using
+
+    # Step 3: Navigate to the frontend_react folder and install dependencies
+    - name: Install dependencies
+      working-directory: ./frontend_react
+      run: npm install
+
+    # Step 4: Build the React app
+    - name: Build React app
+      working-directory: ./frontend_react
+      run: npm run build
+
+    # Step 5: Deploy the React app to GitHub Pages using the `gh-pages` package
+    - name: Deploy to GitHub Pages
+      working-directory: ./frontend_react
+      run: |
+        npm install -g gh-pages
+        gh-pages -d build
