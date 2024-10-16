@@ -1,0 +1,35 @@
+[
+    {
+        "name": "", 
+        "rankUni": 1, 
+        "mainScholarshipType": "",
+        "mainScholarshipName": "",  
+        "mainUniversity": "",
+        "degree": "", 
+        "imgUrl": "",
+        "countryTags": ["all"], 
+        "otherScholarship": ""
+    },
+    {
+        "name": "", 
+        "rankUni": 1, 
+        "mainScholarshipType": "",
+        "mainScholarshipName": "",  
+        "mainUniversity": "",
+        "degree": "", 
+        "imgUrl": "",
+        "countryTags": ["all"], 
+        "otherScholarship": ""
+    },
+    {
+        "name": "", 
+        "rankUni": 1, 
+        "mainScholarshipType": "",
+        "mainScholarshipName": "",  
+        "mainUniversity": "",
+        "degree": "", 
+        "imgUrl": "",
+        "countryTags": ["all"], 
+        "otherScholarship": ""
+    }
+]

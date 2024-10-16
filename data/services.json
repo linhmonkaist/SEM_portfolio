@@ -1,101 +1,111 @@
 [
     {
-        "serviceID": "",
+        "serviceID": "01",
         "serviceName": "Điền online application form",
-        "imgUrl": "",
+        "imgUrl": "./src/assets/about01.png",
         "des": "Hỗ trợ chuẩn bị hồ sơ online và phỏng vấn",
         "introduction": "Gói mentor A-Z hỗ trợ mentee trong việc chuẩn bị hồ sơ, điền application form cho các trường không yêu cầu viết luận.",
         "target": "Các bạn apply học bổng trường/admission cho hệ đại học mà quy trình xét tuyển không yêu cầu viết luận, chỉ xét hồ sơ. Đồng thời, các bạn cần mentor hướng dẫn chuẩn bị hồ sơ, CV, portfolio, hướng dẫn điền online application form và hướng dẫn các thủ tục liên quan.",
         "roadMap": "Đăng ký tư vấn apply cùng mentor mong muốn. Hoặc gửi CV của bạn qua email: semscholars.team@gmail.com cho team SEM Scholars đánh giá trước. Đối với gói Premium, bắt buộc mentee phải được tư vấn trước với mentor. Sau khi nhận được sự đồng ý hỗ trợ từ team hoặc mentor, thanh toán phí mentor. Chi tiết phương thức thanh toán sẽ có ở form đăng kí. Hoàn thành form đăng kí. Link form",
-        "bonus": "",
+        "bonus": "ladf",
         "fqa": ""
     },
     {
-        "serviceID": "",
-        "serviceName": "",
-        "imgUrl": "",
-        "des": "",
-        "introduction": "",
-        "target": "",
+        "serviceID": "02",
+        "serviceName": "Gói lẻ Essay feedback",
+        "imgUrl": "./src/assets/about01.png",
+        "des": "Nhận xét và góp ý cho bài viết trong một buổi",
+        "introduction": "Essay feedback là buổi sửa một trong các bài viết sau: Study Plan/ Research Statement/ Personal Statement/ Recommendation letter. Thời lượng: 60 phút/ 1 buổi cho một bài essay",
+        "target": "Phù hợp với các bạn có nhu cầu được feedback một essay nhất định trong 1 buổi.",
+        "roadMap": "Bước 1: Chuyển khoản và hoàn thành form đăng ký. Bước 2: Chờ email confirm và lịch meeting qua google meet. Bước 3: Lựa chọn lịch phù hợp, gửi CV và các tài liệu liên quan theo hướng dẫn ở email. Bước 4: Tham gia buổi Essay feedback. Bước 5: Mentee thông báo kết quả cho mentor sau khi apply.",
+        "bonus": "",
+        "fqa": [
+            {
+                "question": "Điểm giống và khác nhau của gói lẻ Essay feedback và gói mentor A-Z Essay chuyên sâu ?",
+                "answer": "Điểm giống đó là cả hai gói mentor đều hỗ trợ một essay nhất định trong số các loại essay sau: Study Plan/ Research Statement / Personal Statement/ Recommendation letter. Điểm khác: Đối với gói lẻ Essay feedback, mentor sẽ dựa trên CV và bài viết của mentee để comment những lỗi hoặc những điểm mentee viết chưa tốt và gợi ý các hướng phát triển bài viết. Trong quá trình sửa bài, mentee hoàn toàn có thể đặt câu hỏi và trao đổi thêm với mentor về các ý tưởng được đề ra. Thời lượng giới hạn trong 60 phút. Đối với gói mentor A-Z Essay feedback, thời lượng và số lượng meeting sẽ không giới hạn. Mentor và mentee sẽ cùng nhau lên ý tưởng, sửa bài và phát triển bài viết phù hợp theo học bổng/ trường mentee lựa chọn."
+            }
+        ]
+    },
+    {
+        "serviceID": "03",
+        "serviceName": "Gói Premium",
+        "imgUrl": "./src/assets/about01.png",
+        "des": "Gói mentor A-Z hỗ trợ apply học bổng không giới hạn",
+        "introduction": "Later",
+        "target": "Các bạn có nhu cầu apply nhiều trường cùng một lúc và muốn được mentor đồng hành từ đầu.",
         "roadMap": "",
         "bonus": "",
         "fqa": ""
     },
     {
-        "serviceID": "",
-        "serviceName": "",
+        "serviceID": "04",
+        "serviceName": "Gói Định hướng",
         "imgUrl": "",
-        "des": "",
-        "introduction": "",
-        "target": "",
-        "roadMap": "",
+        "des": "Gói mentor A-Z hỗ trợ apply lab/ liên lạc với giáo sư",
+        "introduction": "Gói mentor A-Z nhằm hướng dẫn tìm giáo sư, tìm lab phù hợp. Mentor đánh giá profile, trường, giáo sư mong muốn liên hệ. Lựa chọn mentor theo ý muốn. Sửa CV/ Cover letter không giới hạn số lần. Hướng dẫn trả lời email và set up buổi trao đổi với giáo sư. Được kết nối với các mentor trong team SEM Scholars. Áp dụng cho tối đa 5 giáo sư.",
+        "target": "Các bạn có định hướng nghiên cứu. Muốn liên lạc giáo sư trước khi apply. Tăng cơ hội được nhận admission/học bổng nếu giáo sư đồng ý",
+        "roadMap": "Đăng ký tư vấn apply cùng mentor mong muốn. Hoặc gửi CV của bạn qua email: semscholars.team@gmail.com cho team SEM Scholars đánh giá trước. Đối với gói Premium, bắt buộc mentee phải được tư vấn trước với mentor. Sau khi nhận được sự đồng ý hỗ trợ từ team hoặc mentor, thanh toán phí mentor. Chi tiết phương thức thanh toán sẽ có ở form đăng kí. Hoàn thành form đăng kí. Link form",
+        "bonus": "Giảm 1,000,000 VND khi đăng ký thêm một gói Basic. Có thể lựa chọn mentor mới cho gói Basic. Giá ưu đãi: 12,000,000 VND/ 1 gói Định hướng + 1 gói Basic Phí hỗ trợ liên hệ nhiều hơn 5 giáo sư, từ giáo sư thứ 6: 500,000 VND/ 1 giáo sư. (Bao gồm việc sửa CV/ Cover letter cho giáo sư mới) Giá ưu đãi: 5,300,000 VND)/ 1 gói Định hướng, liên hệ 6 giáo sư. Giá ưu đãi: 5,800,000 VND)/ 1 gói Định hướng, liên hệ 7 giáo sư. Mentee muốn được hỗ trợ chuẩn bị phỏng vấn với giáo sư: 700,000 VND/ 1 giáo sư/ 1 buổi mock interview",
+        "fqa": ""
+    },
+    {
+        "serviceID": "05",
+        "serviceName": "Gói Essay chuyên sâu",
+        "imgUrl": "",
+        "des": "Gói mentor A-Z hỗ trợ viết essay chuyên sâu",
+        "introduction": "Lựa chọn mentor theo ý muốn Sửa 1 trong 4 loại esay không giới hạn số lần (Study Plan/ Research Statement / Personal Statement/ Cover letter) Được nhận đánh giá trường, profile và gợi ý apply từ phía mentor Nhận tài liệu viết bài và hướng dẫn chuẩn bị hồ sơ miễn phí Áp dụng cho 1 loại essay trong 3 loại. Giới hạn trong một mùa apply nhất định. (có thể thỏa thuận với mentor)",
+        "target": "Các bạn có nhu cầu sửa một essay nhất định.",
+        "roadMap": "later",
+        "bonus": "Giảm 800,000 VND khi đăng ký thêm gói Định hướng. Giá ưu đãi: 9,000,000 VND/ 1 gói Essay chuyên sâu + 1 gói Định hướng",
+        "fqa": ""
+    },
+    {
+        "serviceID": "06",
+        "serviceName": "Gói Basic",
+        "imgUrl": "",
+        "des": "Gói mentor A-Z hỗ trợ hoàn thiện bộ hồ sơ apply học bổng/ admission",
+        "introduction": "Được đánh giá profile miễn phí trước khi đăng ký. Được nhận đánh giá trường Lựa chọn mentor theo ý muốn. Sửa Study plan/ LOR/ Personal statement, mock interview không giới hạn số lần Nhận tài liệu viết bài và hướng dẫn chuẩn bị hồ sơ miễn phí. Được kết nối với các mentor trong team SEM Scholars. Áp dụng cho 1 học bổng hoặc 1 trường",
+        "target": "Các bạn có nhu cầu được hướng dẫn apply một học bổng hoặc một trường từ đầu.",
+        "roadMap": "later",
+        "bonus": "Combo 1 gói Định hướng + 1 gói Basic: giảm 1,000,000VND. Phí sau ưu đãi: 12,000,000 VND. Combo 2 gói Basic: giảm 2,000,000 VND. Phí sau ưu đãi: 14,400,000 VND. Combo 3 gói Basic: giảm 4,000,000 VND. Phí sau ưu đãi: 20,600,000 VND",
+        "fqa": ""
+    },
+    {
+        "serviceID": "07",
+        "serviceName": "Tư vấn apply",
+        "imgUrl": "",
+        "des": "Tư vấn định hướng apply",
+        "introduction": "Buổi tư vấn apply sẽ là buổi nói chuyện giữa mentor và mentee nhằm trả lời các thắc mắc của mentee liên quan đến việc apply học bổng. Tư vấn cách làm đẹp hồ sơ, đánh giá hồ sơ, chia sẻ kinh nghiệm apply, cuộc sống du học, kinh nghiệm ôn thi chứng chỉ …v.v",
+        "target": "- Các bạn mới bắt đầu tìm hiểu về du học và có nhiều thắc mắc cần được những người có kinh nghiệm trả lời trực tiếp. - Các bạn mong muốn được mentor đánh giá CV, hồ sơ cho học bổng mong muốn. - Các phụ huynh đang định hướng cho con đi du học và cần thêm thông tin để định hướng hồ sơ cho con mình.",
+        "roadMap": "Bước 1: Chuyển khoản và hoàn thành form đăng ký Bước 2: Chờ email confirm và lịch meeting qua google meet. Bước 3: Lựa chọn lịch phù hợp, gửi CV và các tài liệu liên quan theo hướng dẫn ở email. Bước 4: Tham gia buổi tư vấn Bước 5: Mentee thông báo kết quả cho mentor sau khi apply.",
+        "bonus": "24h sau khi hoàn thành buổi tư vấn, nếu bạn đăng ký 1 gói nhỏ trong các gói mentor A-Z thì sẽ được hoàn trả phí tư vấn.",
+        "fqa": [
+            {
+                "question": "Đăng ký tư vấn apply khi đang học lớp 10 có quá sớm không ?",
+                "answer": "Hoàn toàn không bạn nhé. Việc được tư vấn apply sớm sẽ giúp bạn định hướng tốt hơn trong việc xây dựng hồ sơ, tìm trường và học bổng phù hợp cho bạn. Ngoài ra, được nhận lời khuyên từ các mentor sẽ giúp bạn có góc nhìn chính xác hơn về việc đi du học."
+            }
+        ]
+    },
+    {
+        "serviceID": "08",
+        "serviceName": "Mock Interview",
+        "imgUrl": "",
+        "des": "Phỏng vấn thử",
+        "introduction": "Mock interview là buổi phỏng vấn thử kéo dài 60 phút gồm 2 phần: phỏng vấn thử và nhận xet, sửa câu trả lời của mentee. Thời lượng: 60 phút/ 1 buổi phỏng vấn thử. Mentor sẽ chuẩn bị trước bộ câu hỏi phỏng vấn thử bám sát vào bài viết, hồ sơ và học bổng mentee apply. Sau buổi phỏng vấn thử, mentee sẽ được nhận bộ câu hỏi mentor đã chuẩn bị để luyện tập thêm.",
+        "target": "Các bạn có nhu cầu được mock interview với mentor trong một buổi.",
+        "roadMap": "Bước 1: Chuyển khoản và hoàn thành form đăng ký Bước 2: Chờ email confirm và lịch meeting qua google meet. Bước 3: Lựa chọn lịch phù hợp, gửi CV và các tài liệu liên quan theo hướng dẫn ở email. Bước 4: Tham gia buổi tư vấn Bước 5: Mentee thông báo kết quả cho mentor sau khi apply.",
         "bonus": "",
         "fqa": ""
     },
     {
-        "serviceID": "",
-        "serviceName": "",
+        "serviceID": "09",
+        "serviceName": "Cover letter & CV feedback",
         "imgUrl": "",
-        "des": "",
-        "introduction": "",
-        "target": "",
-        "roadMap": "",
+        "des": "Nhận xét và góp ý cho CV và cover letter",
+        "introduction": "Buổi feedback CV & Cover letter sẽ sửa 1 CV, nhận xét 1 cover letter phù hợp với hướng nghiên cứu của giáo sư mà mentee mong muốn. Thời lượng: 90 phút/ 1 buổi feedback. Mentee cũng có thể gửi thêm thông tin của giáo sư, lab và hướng nghiên cứu của lab trước cho mentor.",
+        "target": "Các bạn muốn được sửa cover letter và CV để apply cho học bổng giáo sư, apply vào lab nghiên cứu.",
+        "roadMap": "Bước 1: Chuyển khoản và hoàn thành form đăng ký Bước 2: Chờ email confirm và lịch meeting qua google meet. Bước 3: Lựa chọn lịch phù hợp, gửi CV và các tài liệu liên quan theo hướng dẫn ở email. Bước 4: Tham gia buổi tư vấn Bước 5: Mentee thông báo kết quả cho mentor sau khi apply.",
         "bonus": "",
         "fqa": ""
-    },
-    {
-        "serviceID": "",
-        "serviceName": "",
-        "imgUrl": "",
-        "des": "",
-        "introduction": "",
-        "target": "",
-        "roadMap": "",
-        "bonus": "",
-        "fqa": ""
-    },
-    {
-        "serviceID": "",
-        "serviceName": "",
-        "imgUrl": "",
-        "des": "",
-        "introduction": "",
-        "target": "",
-        "roadMap": "",
-        "bonus": "",
-        "fqa": ""
-    },
-    {
-        "serviceID": "",
-        "serviceName": "",
-        "imgUrl": "",
-        "des": "",
-        "introduction": "",
-        "target": "",
-        "roadMap": "",
-        "bonus": "",
-        "fqa": ""
-    },
-    {
-        "serviceID": "",
-        "serviceName": "",
-        "imgUrl": "",
-        "des": "",
-        "introduction": "",
-        "target": "",
-        "roadMap": "",
-        "bonus": "",
-        "fqa": ""
-    },
-    {
-        "serviceID": "",
-        "serviceName": "",
-        "imgUrl": "",
-        "des": "",
-        "introduction": "",
-        "target": "",
-        "roadMap": "",
-        "bonus": "",
-        "fqa": ""
-    },
+    }
 ]
